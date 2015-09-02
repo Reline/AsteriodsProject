@@ -20,7 +20,7 @@ def main():
 	pygame.init()
 
 	ship = Ship("player.png", True, SPAWNPOINT)
-	background = pygame.image.load("background.jpeg").convert_alpha()
+	background = pygame.image.load("img/background.jpeg").convert_alpha()
 	numberOfAsteroids = 0
 	asteroidList = []
 	bulletList = []

@@ -11,7 +11,7 @@ class GameObject(pygame.sprite.Sprite):
     radius = 0.0
     can_loop = True
     def __init__(self, imageFileName, canLoop, initPosition):
-        self.image = pygame.image.load(imageFileName)
+        self.image = pygame.image.load("img/" + imageFileName)
         self.rect = self.image.get_rect()
         if (self.rect.width > self.rect.height):
             self.radius = self.rect.width / 2.0
